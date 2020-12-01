@@ -12,13 +12,25 @@
  */ 
 /*    -------------------------------------------------------------- */
 int nth_prime(unsigned int a, unsigned int d, unsigned int n){
+	int num=a;
+	int count=0;
+		for(;;){
+		    count+=is_prime(num);
+			if(count==n){
+			std::cout << num << std::endl;
+			return 0;
+			}
+	num+=d;
+	}
 };
-bool is_prime(int num){
-	for (i=2;i<=num-1;i++){
-	if(num%i==0) return false;
+int is_prime(int a){
+	for (int i=2;i<=a-1;i++){
+	if(a%i==0){
+	    return false;
+		}
 	}
 	return true;
-}
+};
 int main() {
 	std::cout << nth_prime(367,186,151) << std::endl;
 	std::cout << nth_prime(179,10,203) << std::endl;
