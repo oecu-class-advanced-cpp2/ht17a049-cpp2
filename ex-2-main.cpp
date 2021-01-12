@@ -1,5 +1,7 @@
 #include <iostream>
 #include <string>
+#include <algorithm>
+#include <sstream>
 
 namespace cpp2 {
 	/* --------------------------------------------------------------------- */
