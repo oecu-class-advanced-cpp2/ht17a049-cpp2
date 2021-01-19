@@ -75,7 +75,12 @@ private:
 	*/
 	/* ----------------------------------------------------------------- */
 	int unit(char c) {
+		if (c == 'm')return 1000;
+		if (c == 'c')return 100;
+		if (c == 'x')return 10;
+		if (c == 'i')return 1;
 
+		return 0;
 	}
 
 
