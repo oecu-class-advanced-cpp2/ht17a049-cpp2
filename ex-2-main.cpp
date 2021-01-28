@@ -38,6 +38,7 @@ namespace cpp2 {
 				}
 			}
 		}
+		mcxi() {}
 		/* ----------------------------------------------------------------- 
 		operator+
 
@@ -100,6 +101,7 @@ namespace cpp2 {
 				outstrings << j;
 				outstrings << "i";
 			}
+			return outstrings.str();
 		}
 
 	private:
